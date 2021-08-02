@@ -1,0 +1,134 @@
+/* header_wrapper start */
+.header_wrapper {
+  height: 100vh;
+}
+/* header_wrapper end */
+
+
+/*  eye_catch start */
+.eye_catch_wrapper {
+  position: relative;
+  height: 100%;
+  background-color: white;
+}
+
+#eye_catching_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40vw;
+  padding: 4rem 5rem;
+  background-color: rgba(255, 255, 255, .7);
+  min-width: 180px;
+  max-width: 430px;
+  z-index: 1;
+}
+
+.eye_catch_wrapper .bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+}
+
+.eye_catch_wrapper .photo_1 {
+  background-image: url(../img/main_photo01.jpg);
+}
+
+.eye_catch_wrapper .photo_2 {
+  background-image: url(../img/main_photo02.jpg);
+}
+
+.eye_catch_wrapper .photo_3 {
+  background-image: url(../img/main_photo03.jpg);
+}
+
+/*  eye_catch end  */
+
+
+/* menu_button start */
+.menu_button {
+  width: 3rem;
+  height: 2.2rem;
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  z-index: 10;
+}
+
+.menu_button span {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  display: block;
+  background-color: white;
+  transition: all .5s;
+}
+
+.menu_button span:first-child {
+  top: 0;
+}
+
+.menu_button span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu_button span:last-child {
+  bottom: 0;
+}
+
+/* menu_button end */
+
+/*  menu start  */
+.menu {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color: white;
+  z-index: 9;
+  transition: all .5s ease-in-out;
+}
+
+.menu img {
+  width: 70%;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu_item {
+  font-size: 1.7rem;
+  font-family: 'Noto Serif JP',游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+}
+
+.menu_item:nth-child(2n+1) {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.menu_item:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.menu_item a {
+  color: #333;
+}
+
+.menu_item a:hover {
+  text-decoration: none;
+}
+/*  menu end  */
